@@ -1,0 +1,1973 @@
+/* Created by Artisteer v4.1.0.59861 */
+
+#rb-main
+{
+   background: #FFFFFF;
+   margin:0 auto;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position: relative;
+   width: 100%;
+   min-height: 100%;
+   left: 0;
+   top: 0;
+   cursor:default;
+   overflow:hidden;
+}
+table, ul.rb-hmenu
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+   margin: 0;
+   padding: 0;
+}
+
+/* Reset buttons border. It's important for input and button tags. 
+ * border-collapse should be separate for shadow in IE. 
+ */
+.rb-button
+{
+   border: 0;
+   border-collapse: separate;
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+   background: #F9681F;
+   background: linear-gradient(top, #FBA174 0, #FA7C3D 50%, #F95706 50%, #E04E06 50%, #F95706 73%, #F96B24 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FBA174 0, #FA7C3D 50%, #F95706 50%, #E04E06 50%, #F95706 73%, #F96B24 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FBA174 0, #FA7C3D 50%, #F95706 50%, #E04E06 50%, #F95706 73%, #F96B24 100%) no-repeat;
+   background: -o-linear-gradient(top, #FBA174 0, #FA7C3D 50%, #F95706 50%, #E04E06 50%, #F95706 73%, #F96B24 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FBA174 0, #FA7C3D 50%, #F95706 50%, #E04E06 50%, #F95706 73%, #F96B24 100%) no-repeat;
+   background: linear-gradient(top, #FBA174 0, #FA7C3D 50%, #F95706 50%, #E04E06 50%, #F95706 73%, #F96B24 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FBA174 0, #FA7C3D 50%, #F95706 50%, #E04E06 50%, #F95706 73%, #F96B24 100%) no-repeat;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   -webkit-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   -moz-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   border-width: 0;
+   padding:0 21px;
+   margin:0 auto;
+   height:25px;
+}
+
+.rb-postcontent,
+.rb-postheadericons,
+.rb-postfootericons,
+.rb-blockcontent,
+ul.rb-vmenu a 
+{
+   text-align: left;
+}
+
+.rb-postcontent,
+.rb-postcontent li,
+.rb-postcontent table,
+.rb-postcontent a,
+.rb-postcontent a:link,
+.rb-postcontent a:visited,
+.rb-postcontent a.visited,
+.rb-postcontent a:hover,
+.rb-postcontent a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+
+.rb-postcontent p
+{
+   margin: 13px 0;
+}
+
+.rb-postcontent h1, .rb-postcontent h1 a, .rb-postcontent h1 a:link, .rb-postcontent h1 a:visited, .rb-postcontent h1 a:hover,
+.rb-postcontent h2, .rb-postcontent h2 a, .rb-postcontent h2 a:link, .rb-postcontent h2 a:visited, .rb-postcontent h2 a:hover,
+.rb-postcontent h3, .rb-postcontent h3 a, .rb-postcontent h3 a:link, .rb-postcontent h3 a:visited, .rb-postcontent h3 a:hover,
+.rb-postcontent h4, .rb-postcontent h4 a, .rb-postcontent h4 a:link, .rb-postcontent h4 a:visited, .rb-postcontent h4 a:hover,
+.rb-postcontent h5, .rb-postcontent h5 a, .rb-postcontent h5 a:link, .rb-postcontent h5 a:visited, .rb-postcontent h5 a:hover,
+.rb-postcontent h6, .rb-postcontent h6 a, .rb-postcontent h6 a:link, .rb-postcontent h6 a:visited, .rb-postcontent h6 a:hover,
+.rb-blockheader .t, .rb-blockheader .t a, .rb-blockheader .t a:link, .rb-blockheader .t a:visited, .rb-blockheader .t a:hover,
+.rb-vmenublockheader .t, .rb-vmenublockheader .t a, .rb-vmenublockheader .t a:link, .rb-vmenublockheader .t a:visited, .rb-vmenublockheader .t a:hover,
+.rb-headline, .rb-headline a, .rb-headline a:link, .rb-headline a:visited, .rb-headline a:hover,
+.rb-slogan, .rb-slogan a, .rb-slogan a:link, .rb-slogan a:visited, .rb-slogan a:hover,
+.rb-postheader, .rb-postheader a, .rb-postheader a:link, .rb-postheader a:visited, .rb-postheader a:hover
+{
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 120%;
+}
+
+.rb-postcontent a, .rb-postcontent a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #F05305;
+}
+
+.rb-postcontent a:visited, .rb-postcontent a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #7C96B1;
+}
+
+.rb-postcontent  a:hover, .rb-postcontent a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+   color: #FB7532;
+}
+
+.rb-postcontent h1
+{
+   color: #687A8D;
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-blockcontent h1
+{
+   margin: 10px 0 0;
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h1 a, .rb-postcontent h1 a:link, .rb-postcontent h1 a:hover, .rb-postcontent h1 a:visited, .rb-blockcontent h1 a, .rb-blockcontent h1 a:link, .rb-blockcontent h1 a:hover, .rb-blockcontent h1 a:visited 
+{
+   font-size: 26px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h2
+{
+   color: #8796A6;
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-blockcontent h2
+{
+   margin: 10px 0 0;
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h2 a, .rb-postcontent h2 a:link, .rb-postcontent h2 a:hover, .rb-postcontent h2 a:visited, .rb-blockcontent h2 a, .rb-blockcontent h2 a:link, .rb-blockcontent h2 a:hover, .rb-blockcontent h2 a:visited 
+{
+   font-size: 22px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h3
+{
+   color: #FB7532;
+   margin: 10px 0 0;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-blockcontent h3
+{
+   margin: 10px 0 0;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h3 a, .rb-postcontent h3 a:link, .rb-postcontent h3 a:hover, .rb-postcontent h3 a:visited, .rb-blockcontent h3 a, .rb-blockcontent h3 a:link, .rb-blockcontent h3 a:hover, .rb-blockcontent h3 a:visited 
+{
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h4
+{
+   color: #496079;
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-blockcontent h4
+{
+   margin: 10px 0 0;
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h4 a, .rb-postcontent h4 a:link, .rb-postcontent h4 a:hover, .rb-postcontent h4 a:visited, .rb-blockcontent h4 a, .rb-blockcontent h4 a:link, .rb-blockcontent h4 a:hover, .rb-blockcontent h4 a:visited 
+{
+   font-size: 18px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h5
+{
+   color: #496079;
+   margin: 10px 0 0;
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-blockcontent h5
+{
+   margin: 10px 0 0;
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h5 a, .rb-postcontent h5 a:link, .rb-postcontent h5 a:hover, .rb-postcontent h5 a:visited, .rb-blockcontent h5 a, .rb-blockcontent h5 a:link, .rb-blockcontent h5 a:hover, .rb-blockcontent h5 a:visited 
+{
+   font-size: 15px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h6
+{
+   color: #99ADC2;
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-blockcontent h6
+{
+   margin: 10px 0 0;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-postcontent h6 a, .rb-postcontent h6 a:link, .rb-postcontent h6 a:hover, .rb-postcontent h6 a:visited, .rb-blockcontent h6 a, .rb-blockcontent h6 a:link, .rb-blockcontent h6 a:hover, .rb-blockcontent h6 a:visited 
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+header, footer, article, nav, #rb-hmenu-bg, .rb-sheet, .rb-hmenu a, .rb-vmenu a, .rb-slidenavigator > a, .rb-checkbox:before, .rb-radiobutton:before
+{
+   -webkit-background-origin: border !important;
+   -moz-background-origin: border !important;
+   background-origin: border-box !important;
+}
+
+header, footer, article, nav, #rb-hmenu-bg, .rb-sheet, .rb-slidenavigator > a, .rb-checkbox:before, .rb-radiobutton:before
+{
+   display: block;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+ol
+{
+   list-style-position: inside;
+}
+
+html, body
+{
+   height: 100%;
+}
+
+body
+{
+   padding: 0;
+   margin:0;
+   min-width: 250px;
+   color: #2C3A49;
+}
+
+.rb-header:before, #rb-header-bg:before, .rb-layout-cell:before, .rb-layout-wrapper:before, .rb-footer:before, .rb-nav:before, #rb-hmenu-bg:before, .rb-sheet:before
+{
+   width: 100%;
+   content: " ";
+   display: table;
+}
+.rb-header:after, #rb-header-bg:after, .rb-layout-cell:after, .rb-layout-wrapper:after, .rb-footer:after, .rb-nav:after, #rb-hmenu-bg:after, .rb-sheet:after,
+.cleared, .clearfix:after {
+   clear: both;
+   font: 0/0 serif;
+   display: block;
+   content: " ";
+}
+
+form
+{
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+table.position
+{
+   position: relative;
+   width: 100%;
+   table-layout: fixed;
+}
+
+li h1, .rb-postcontent li h1, .rb-blockcontent li h1 
+{
+   margin:1px;
+} 
+li h2, .rb-postcontent li h2, .rb-blockcontent li h2 
+{
+   margin:1px;
+} 
+li h3, .rb-postcontent li h3, .rb-blockcontent li h3 
+{
+   margin:1px;
+} 
+li h4, .rb-postcontent li h4, .rb-blockcontent li h4 
+{
+   margin:1px;
+} 
+li h5, .rb-postcontent li h5, .rb-blockcontent li h5 
+{
+   margin:1px;
+} 
+li h6, .rb-postcontent li h6, .rb-blockcontent li h6 
+{
+   margin:1px;
+} 
+li p, .rb-postcontent li p, .rb-blockcontent li p 
+{
+   margin:1px;
+}
+
+
+.rb-shapes
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: 0;
+}
+
+.rb-slider-inner {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+}
+
+.rb-slidenavigator > a {
+   display: inline-block;
+   vertical-align: middle;
+   outline-style: none;
+   font-size: 1px;
+}
+
+.rb-slidenavigator > a:last-child {
+   margin-right: 0 !important;
+}
+
+.rb-object118974279
+{
+    display: block;
+    left: 44.25%;
+    margin-left: -109px;
+    position: absolute;
+    top: 3px;
+    width: 248px;
+    height: 83px;
+    background-image: url('images/object118974279.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+
+
+
+
+.rb-header
+{
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+   border-radius:5px;
+   margin:10px auto 0;
+   height: 100px;
+   /*background-image: url('images/header.png');*/
+   background-position: center top;
+   background-repeat: no-repeat;
+   position: relative;
+   min-width: 250px;
+   max-width: 800px;
+   width: 60%;
+   z-index: auto !important;
+}
+
+.responsive .rb-header 
+{
+   background-image: url('images/header.png');
+   background-position: center center;
+}
+
+.rb-header>.widget 
+{
+   position:absolute;
+   z-index:101;
+}
+
+.rb-header .rb-slider-inner
+{
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+   border-radius:5px;
+}
+
+.rb-sheet
+{
+   background: #D9DEE3;
+   background: rgba(217, 222, 227, 0.4);
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+   border-radius:5px;
+   border:3px solid rgba(156, 175, 196, 0.4);
+   margin:0 auto;
+   position:relative;
+   cursor:auto;
+   width: 60%;
+   min-width: 250px;
+   max-width: 800px;
+   z-index: auto !important;
+}
+
+.rb-layout-wrapper
+{
+   position: relative;
+   margin: 20px auto 0 auto;
+   z-index: auto !important;
+}
+
+.rb-content-layout
+{
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
+
+.rb-content-layout-row 
+{
+   display: table-row;
+}
+
+.rb-layout-cell
+{
+   display: table-cell;
+   vertical-align: top;
+}
+
+/* need only for content layout in post content */ 
+.rb-postcontent .rb-content-layout
+{
+   border-collapse: collapse;
+}
+
+.rb-block
+{
+   border:1px solid transparent;
+   margin:7px;
+}
+div.rb-block img
+{
+   border: none;
+   margin: 10px;
+}
+
+.rb-blockheader
+{
+   padding:12px 7px;
+   margin:0 auto;
+}
+.rb-blockheader .t,
+.rb-blockheader .t a,
+.rb-blockheader .t a:link,
+.rb-blockheader .t a:visited, 
+.rb-blockheader .t a:hover
+{
+   color: #6A7D90;
+   font-size: 20px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   margin: 0 5px;
+}
+
+.rb-blockcontent
+{
+   background: #FFFFFF;
+   -webkit-border-radius:6px;
+   -moz-border-radius:6px;
+   border-radius:6px;
+   border:1px solid #9CAFC4;
+   padding:7px;
+   margin:0 auto;
+   color: #303F50;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+.rb-blockcontent table,
+.rb-blockcontent li, 
+.rb-blockcontent a,
+.rb-blockcontent a:link,
+.rb-blockcontent a:visited,
+.rb-blockcontent a:hover
+{
+   color: #303F50;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+
+.rb-blockcontent p
+{
+   margin: 0 5px;
+}
+
+.rb-blockcontent a, .rb-blockcontent a:link
+{
+   color: #FB7C3C;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-blockcontent a:visited, .rb-blockcontent a.visited
+{
+   color: #A9BACB;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.rb-blockcontent a:hover, .rb-blockcontent a.hover
+{
+   color: #FA5705;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+.rb-block ul>li:before
+{
+   content:url('images/blockbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -10px;
+}
+.opera .rb-block ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rb-block li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+   color: #4E6883;
+   margin: 5px 0 0 10px;
+}
+
+.rb-block ul>li, .rb-block ol
+{
+   padding: 0;
+}
+
+.rb-block ul>li
+{
+   padding-left: 10px;
+}
+
+.rb-breadcrumbs
+{
+   margin:0 auto;
+}
+
+a.rb-button,
+a.rb-button:link,
+a:link.rb-button:link,
+body a.rb-button:link,
+a.rb-button:visited,
+body a.rb-button:visited,
+input.rb-button,
+button.rb-button
+{
+   text-decoration: none;
+   font-size: 14px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   position:relative;
+   display: inline-block;
+   vertical-align: middle;
+   white-space: nowrap;
+   text-align: center;
+   color: #FFFFFF;
+   margin: 0 5px 0 0 !important;
+   overflow: visible;
+   cursor: pointer;
+   text-indent: 0;
+   line-height: 25px;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+.rb-button img
+{
+   margin: 0;
+   vertical-align: middle;
+}
+
+.firefox2 .rb-button
+{
+   display: block;
+   float: left;
+}
+
+input, select, textarea, a.rb-search-button span
+{
+   vertical-align: middle;
+   font-size: 14px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.rb-block select 
+{
+   width:96%;
+}
+
+input.rb-button
+{
+   float: none !important;
+}
+
+.rb-button.active, .rb-button.active:hover
+{
+   background: #D74B04;
+   background: linear-gradient(top, #FB7837 0, #FA5705 45%, #F55505 50%, #A53903 50%, #DC4C04 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FB7837 0, #FA5705 45%, #F55505 50%, #A53903 50%, #DC4C04 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FB7837 0, #FA5705 45%, #F55505 50%, #A53903 50%, #DC4C04 100%) no-repeat;
+   background: -o-linear-gradient(top, #FB7837 0, #FA5705 45%, #F55505 50%, #A53903 50%, #DC4C04 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FB7837 0, #FA5705 45%, #F55505 50%, #A53903 50%, #DC4C04 100%) no-repeat;
+   background: linear-gradient(top, #FB7837 0, #FA5705 45%, #F55505 50%, #A53903 50%, #DC4C04 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FB7837 0, #FA5705 45%, #F55505 50%, #A53903 50%, #DC4C04 100%) no-repeat;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   -webkit-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   -moz-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   border-width: 0;
+   padding:0 21px;
+   margin:0 auto;
+}
+.rb-button.active, .rb-button.active:hover {
+   color: #FFFFFF !important;
+}
+
+.rb-button.hover, .rb-button:hover
+{
+   background: #FC905A;
+   background: linear-gradient(top, #FDC9AF 0, #FCA478 50%, #FB6E28 50%, #FC935F 100%) no-repeat;
+   background: -webkit-linear-gradient(top, #FDC9AF 0, #FCA478 50%, #FB6E28 50%, #FC935F 100%) no-repeat;
+   background: -moz-linear-gradient(top, #FDC9AF 0, #FCA478 50%, #FB6E28 50%, #FC935F 100%) no-repeat;
+   background: -o-linear-gradient(top, #FDC9AF 0, #FCA478 50%, #FB6E28 50%, #FC935F 100%) no-repeat;
+   background: -ms-linear-gradient(top, #FDC9AF 0, #FCA478 50%, #FB6E28 50%, #FC935F 100%) no-repeat;
+   background: linear-gradient(top, #FDC9AF 0, #FCA478 50%, #FB6E28 50%, #FC935F 100%) no-repeat;
+   -svg-background: linear-gradient(top, #FDC9AF 0, #FCA478 50%, #FB6E28 50%, #FC935F 100%) no-repeat;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   -webkit-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   -moz-box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   box-shadow:1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+   border-width: 0;
+   padding:0 21px;
+   margin:0 auto;
+}
+.rb-button.hover, .rb-button:hover {
+   color: #FFFFFF !important;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   background: #F9FAFB;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   border:1px solid #B9C2CB;
+   margin:0 auto;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
+{
+   width: 100%;
+   padding: 4px 0;
+   color: #3D5166 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-shadow: none;
+}
+input.rb-error, textarea.rb-error
+{
+   background: #F9FAFB;
+   border:1px solid #E2341D;
+   margin:0 auto;
+}
+input.rb-error, textarea.rb-error {
+   color: #3D5166 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.rb-search input[type="text"]
+{
+   background: #FFFFFF;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   border:1px solid #CCD6E0;
+   margin:0 auto;
+   width: 100%;
+   padding: 4px 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   color: #364049 !important;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+form.rb-search 
+{
+   background-image: none;
+   border: 0;
+   display:block;
+   position:relative;
+   top:0;
+   padding:0;
+   margin:5px;
+   left:0;
+   line-height: 0;
+}
+
+form.rb-search input, a.rb-search-button
+{
+   top:0;
+   right:0;
+}
+
+form.rb-search>input, a.rb-search-button{
+   bottom:0;
+   left:0;
+   vertical-align: middle;
+}
+
+form.rb-search input[type="submit"], input.rb-search-button, a.rb-search-button
+{
+   margin:0 auto;
+}
+form.rb-search input[type="submit"], input.rb-search-button, a.rb-search-button {
+   position:absolute;
+   left:auto;
+   display:block;
+   border:none;
+   background:url('images/searchicon.png') center center no-repeat;
+   width:24px;
+   height: 100%;
+   padding:0;
+   color: #FFFFFF !important;
+   cursor: pointer;
+}
+
+a.rb-search-button span.rb-search-button-text {
+   display: none;
+}
+
+label.rb-checkbox:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+}
+label.rb-checkbox
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 16px;
+   display: inline-block;
+   color: #323B43 !important;
+}
+
+.rb-checkbox>input[type="checkbox"]
+{
+   margin: 0 5px 0 0;
+}
+
+label.rb-checkbox.active:before
+{
+   background: #FC905A;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.rb-checkbox.hovered:before
+{
+   background: #D9DEE3;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius:1px;
+   border-width: 0;
+   margin:0 auto;
+   width:16px;
+   height:16px;
+   display: inline-block;
+}
+
+label.rb-radiobutton:before
+{
+   background: #F9FAFB;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+}
+label.rb-radiobutton
+{
+   cursor: pointer;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 12px;
+   display: inline-block;
+   color: #323B43 !important;
+}
+
+.rb-radiobutton>input[type="radio"]
+{
+   vertical-align: baseline;
+   margin: 0 5px 0 0;
+}
+
+label.rb-radiobutton.active:before
+{
+   background: #B9C2CB;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+label.rb-radiobutton.hovered:before
+{
+   background: #D9DEE3;
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-width: 0;
+   margin:0 auto;
+   width:12px;
+   height:12px;
+   display: inline-block;
+}
+
+.rb-comments
+{
+   border-top:1px dotted #A1ADBA;
+   margin:0 auto;
+   margin-top: 25px;
+}
+
+.rb-comments h2
+{
+   color: #21262C;
+}
+
+.rb-comment-inner
+{
+   -webkit-border-radius:2px;
+   -moz-border-radius:2px;
+   border-radius:2px;
+   padding:5px;
+   margin:0 auto;
+   margin-left: 96px;
+}
+.rb-comment-avatar 
+{
+   float:left;
+   width:80px;
+   height:80px;
+   padding:2px;
+   background:#fff;
+   border:1px solid #E2E8EE;
+}
+
+.rb-comment-avatar>img
+{
+   margin:0 !important;
+   border:none !important;
+}
+
+.rb-comment-content
+{
+   padding:10px 0;
+   color: #2C3A49;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-comment
+{
+   margin-top: 6px;
+}
+
+.rb-comment:first-child
+{
+   margin-top: 0;
+}
+
+.rb-comment-header
+{
+   color: #21262C;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.rb-comment-header a, 
+.rb-comment-header a:link, 
+.rb-comment-header a:visited,
+.rb-comment-header a.visited,
+.rb-comment-header a:hover,
+.rb-comment-header a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 100%;
+}
+
+.rb-comment-header a, .rb-comment-header a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: bold;
+   font-style: normal;
+   color: #6A7D90;
+}
+
+.rb-comment-header a:visited, .rb-comment-header a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #6A7D90;
+}
+
+.rb-comment-header a:hover,  .rb-comment-header a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #6A7D90;
+}
+
+.rb-comment-content a, 
+.rb-comment-content a:link, 
+.rb-comment-content a:visited,
+.rb-comment-content a.visited,
+.rb-comment-content a:hover,
+.rb-comment-content a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-comment-content a, .rb-comment-content a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #BE4204;
+}
+
+.rb-comment-content a:visited, .rb-comment-content a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #394C60;
+}
+
+.rb-comment-content a:hover,  .rb-comment-content a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #BE4204;
+}
+
+.rb-pager
+{
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   padding:6px;
+   margin:2px;
+}
+
+.rb-pager>*:last-child,
+.rb-pager>*:last-child:hover
+{
+   margin-right:0;
+}
+
+.rb-pager>span {
+   cursor:default;
+}
+
+.rb-pager>*
+{
+   background: #D9DEE3;
+   -webkit-border-radius:4px;
+   -moz-border-radius:4px;
+   border-radius:4px;
+   padding:10px;
+   margin:0 4px 0 auto;
+   position:relative;
+   display:inline-block;
+   margin-left: 0;
+}
+
+.rb-pager a:link,
+.rb-pager a:visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #1C2126
+;
+}
+
+.rb-pager .active
+{
+   background: #B6BFC9;
+   padding:10px;
+   margin:0 4px 0 auto;
+   color: #FFFFFF
+;
+}
+
+.rb-pager .more
+{
+   background: #D9DEE3;
+   margin:0 4px 0 auto;
+}
+.rb-pager a.more:link,
+.rb-pager a.more:visited
+{
+   color: #411701
+;
+}
+.rb-pager a:hover
+{
+   background: #B9C2CB;
+   padding:10px;
+   margin:0 4px 0 auto;
+}
+.rb-pager  a:hover,
+.rb-pager  a.more:hover
+{
+   text-decoration: none;
+   color: #21262C
+;
+}
+.rb-pager>*:after
+{
+   margin:0 0 0 auto;
+   display:inline-block;
+   position:absolute;
+   content: ' ';
+   top:0;
+   width:0;
+   height:100%;
+   right: 0;
+   text-decoration:none;
+}
+
+.rb-pager>*:last-child:after{
+   display:none;
+}
+
+.rb-commentsform
+{
+   background: #E2E8EE;
+   background: transparent;
+   padding:10px;
+   margin:0 auto;
+   margin-top:25px;
+   color: #21262C;
+}
+
+.rb-commentsform h2{
+   padding-bottom:10px;
+   margin: 0;
+   color: #21262C;
+}
+
+.rb-commentsform label {
+   display: inline-block;
+   line-height: 25px;
+}
+
+.rb-commentsform input:not([type=submit]), .rb-commentsform textarea {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width:100%;
+   max-width:100%;
+}
+
+.rb-commentsform .form-submit
+{
+   margin-top: 10px;
+}
+.rb-post
+{
+   padding:5px;
+   margin:7px;
+}
+a img
+{
+   border: 0;
+}
+
+.rb-article img, img.rb-article, .rb-block img, .rb-footer img
+{
+   border: 1px solid #9CAFC4;
+   margin: 5px 5px 5px 5px;
+}
+
+.rb-metadata-icons img
+{
+   border: none;
+   vertical-align: middle;
+   margin: 2px;
+}
+
+.rb-article table, table.rb-article
+{
+   border-collapse: collapse;
+   margin: 1px;
+}
+
+.rb-post .rb-content-layout-br
+{
+   height: 0;
+}
+
+.rb-article th, .rb-article td
+{
+   padding: 2px;
+   border: dotted 1px #B9C2CB;
+   vertical-align: top;
+   text-align: left;
+}
+
+.rb-article th
+{
+   text-align: center;
+   vertical-align: middle;
+   padding: 7px;
+}
+
+pre
+{
+   overflow: auto;
+   padding: 0.1em;
+}
+
+.preview-cms-logo
+{
+   border: 0;
+   margin: 1em 1em 0 0;
+   float: left;
+}
+
+.image-caption-wrapper
+{
+   padding: 5px 5px 5px 5px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper img
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper div.rb-collage
+{
+   margin: 0 !important;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.image-caption-wrapper p
+{
+   font-size: 80%;
+   text-align: right;
+   margin: 0;
+}
+
+.rb-postheader
+{
+   color: #496079;
+   margin: 5px 10px;
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.rb-postheader a, 
+.rb-postheader a:link, 
+.rb-postheader a:visited,
+.rb-postheader a.visited,
+.rb-postheader a:hover,
+.rb-postheader a.hovered
+{
+   font-size: 24px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+}
+
+.rb-postheader a, .rb-postheader a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #FB722D;
+}
+
+.rb-postheader a:visited, .rb-postheader a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #6684A3;
+}
+
+.rb-postheader a:hover,  .rb-postheader a.hovered
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   text-align: left;
+   color: #FB7532;
+}
+
+.rb-postheadericons,
+.rb-postheadericons a,
+.rb-postheadericons a:link,
+.rb-postheadericons a:visited,
+.rb-postheadericons a:hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #496079;
+}
+
+.rb-postheadericons
+{
+   padding: 1px;
+   margin: 0 0 0 10px;
+}
+
+.rb-postheadericons a, .rb-postheadericons a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #FA681E;
+}
+
+.rb-postheadericons a:visited, .rb-postheadericons a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   color: #546F8C;
+}
+
+.rb-postheadericons a:hover, .rb-postheadericons a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: underline;
+   color: #DC4C04;
+}
+
+.rb-postdateicon:before
+{
+   content:url('images/postdateicon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .rb-postdateicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rb-postauthoricon:before
+{
+   content:url('images/postauthoricon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .rb-postauthoricon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rb-postprinticon:before
+{
+   content:url('images/postprinticon.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .rb-postprinticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rb-postediticon:before
+{
+   content:url('images/postediticon.png');
+   margin-right:6px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   bottom: auto;
+}
+.opera .rb-postediticon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rb-postcontent ul>li:before,  .rb-post ul>li:before,  .rb-textblock ul>li:before
+{
+   content:url('images/postbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .rb-postcontent ul>li:before, .opera   .rb-post ul>li:before, .opera   .rb-textblock ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rb-postcontent li, .rb-post li, .rb-textblock li
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #303F50;
+   margin: 3px 0 0 11px;
+}
+
+.rb-postcontent ul>li, .rb-post ul>li, .rb-textblock ul>li, .rb-postcontent ol, .rb-post ol, .rb-textblock ol
+{
+   padding: 0;
+}
+
+.rb-postcontent ul>li, .rb-post ul>li, .rb-textblock ul>li
+{
+   padding-left: 13px;
+}
+
+.rb-postcontent ul>li:before,  .rb-post ul>li:before,  .rb-textblock ul>li:before
+{
+   margin-left: -13px;
+}
+
+.rb-postcontent ol, .rb-post ol, .rb-textblock ol, .rb-postcontent ul, .rb-post ul, .rb-textblock ul
+{
+   margin: 1em 0 1em 11px;
+}
+
+.rb-postcontent li ol, .rb-post li ol, .rb-textblock li ol, .rb-postcontent li ul, .rb-post li ul, .rb-textblock li ul
+{
+   margin: 0.5em 0 0.5em 11px;
+}
+
+.rb-postcontent li, .rb-post li, .rb-textblock li
+{
+   margin: 3px 0 0 0;
+}
+
+.rb-postcontent ol>li, .rb-post ol>li, .rb-textblock ol>li
+{
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.rb-postcontent ul>li, .rb-post ul>li, .rb-textblock ul>li
+{
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+blockquote
+{
+   background: #EFF2F5 url('images/postquote.png') no-repeat scroll;
+   border:1px solid #9CAFC4;
+   padding:12px 12px 12px 36px;
+   margin:0 0 0 10px;
+   color: #0D1216;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+   /* makes block not to align behind the image if they are in the same line */
+  overflow: auto;
+   clear:both;
+}
+blockquote a, .rb-postcontent blockquote a, .rb-blockcontent blockquote a, .rb-footer blockquote a,
+blockquote a:link, .rb-postcontent blockquote a:link, .rb-blockcontent blockquote a:link, .rb-footer blockquote a:link,
+blockquote a:visited, .rb-postcontent blockquote a:visited, .rb-blockcontent blockquote a:visited, .rb-footer blockquote a:visited,
+blockquote a:hover, .rb-postcontent blockquote a:hover, .rb-blockcontent blockquote a:hover, .rb-footer blockquote a:hover
+{
+   color: #0D1216;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   font-weight: normal;
+   font-style: italic;
+   text-align: left;
+}
+
+/* Override native 'p' margins*/
+blockquote p,
+.rb-postcontent blockquote p,
+.rb-blockcontent blockquote p,
+.rb-footer blockquote p
+{
+   margin: 0;
+   margin: 5px 0;
+}
+
+.Sorter img
+{
+   border:0;
+   vertical-align:middle;
+   padding:0;
+   margin:0;
+   position:static;
+   z-index:1;
+   width: 12px;
+   height: 6px;
+}
+
+.Sorter a
+{
+   position:relative;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #5F7081;
+}
+
+.Sorter a:link
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #5F7081;
+}
+
+.Sorter a:visited, .Sorter a.visited
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #5F7081;
+}
+
+.Sorter a:hover, .Sorter a.hover
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #485461;
+}
+
+.Sorter
+{
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color:#323B43;
+}
+
+.rb-footer
+{
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border-top:1px dotted #9CAFC4;
+   padding:25px;
+   margin:20px auto 0;
+   position: relative;
+   color: #5E7C9C;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+   text-align: center;
+}
+
+.rb-footer a,
+.rb-footer a:link,
+.rb-footer a:visited,
+.rb-footer a:hover,
+.rb-footer td, 
+.rb-footer th,
+.rb-footer caption
+{
+   color: #5E7C9C;
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   line-height: 175%;
+}
+
+.rb-footer p 
+{
+   padding:0;
+   text-align: center;
+}
+
+.rb-footer a,
+.rb-footer a:link
+{
+   color: #7C96B1;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.rb-footer a:visited
+{
+   color: #5C7999;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: none;
+}
+
+.rb-footer a:hover
+{
+   color: #FB7532;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   text-decoration: underline;
+}
+
+.rb-footer h1
+{
+   color: #8A99A8;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-footer h2
+{
+   color: #A1ADBA;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-footer h3
+{
+   color: #FA681E;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-footer h4
+{
+   color: #9CAFC4;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-footer h5
+{
+   color: #9CAFC4;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-footer h6
+{
+   color: #9CAFC4;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+
+.rb-footer img
+{
+   border: none;
+   margin: 0;
+}
+
+.rb-rss-tag-icon
+{
+   background:  url('images/footerrssicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.rb-rss-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.rb-facebook-tag-icon
+{
+   background:  url('images/footerfacebookicon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.rb-facebook-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.rb-twitter-tag-icon
+{
+   background:  url('images/footertwittericon.png') no-repeat scroll;
+   margin:0 auto;
+   min-height:32px;
+   min-width:32px;
+   display: inline-block;
+   text-indent: 35px;
+   background-position: left center;
+}
+
+.rb-twitter-tag-icon:empty
+{
+   vertical-align: middle;
+}
+
+.rb-footer ul>li:before
+{
+   content:url('images/footerbullets.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+   margin-left: -13px;
+}
+.opera .rb-footer ul>li:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
+.rb-footer li
+{
+   font-size: 13px;
+   font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+   color: #963403;
+}
+
+.rb-footer ul>li, .rb-footer ol
+{
+   padding: 0;
+}
+
+.rb-footer ul>li
+{
+   padding-left: 13px;
+}
+
+.rb-page-footer, 
+.rb-page-footer a,
+.rb-page-footer a:link,
+.rb-page-footer a:visited,
+.rb-page-footer a:hover
+{
+   font-family: Arial;
+   font-size: 10px;
+   letter-spacing: normal;
+   word-spacing: normal;
+   font-style: normal;
+   font-weight: normal;
+   text-decoration: underline;
+   color: #647587;
+}
+
+.rb-page-footer
+{
+   position: relative;
+   z-index: auto !important;
+   padding: 1em;
+   text-align: center !important;
+   text-decoration: none;
+   color: #435970;
+}
+
+.rb-lightbox-wrapper 
+{
+   background: #333;
+   background: rgba(0, 0, 0, .8);
+   bottom: 0;
+   left: 0;
+   padding: 0 100px;
+   position: fixed;
+   right: 0;
+   text-align: center;
+   top: 0;
+   z-index: 1000000;
+}
+
+.rb-lightbox,
+.rb-lightbox-wrapper .rb-lightbox-image
+{
+   cursor: pointer;
+}
+
+.rb-lightbox-wrapper .rb-lightbox-image
+{
+   border: 6px solid #fff;
+   border-radius: 3px;
+   display: none;
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+.rb-lightbox-wrapper .rb-lightbox-image.active
+{
+   display: inline-block;
+}
+
+.rb-lightbox-wrapper .lightbox-error
+{
+   background: #fff;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 80px;
+   opacity: .95;
+   padding: 20px;
+   position: fixed;
+   width: 300px;
+   z-index: 100;
+}
+
+.rb-lightbox-wrapper .loading
+{
+   background: #fff url('images/preloader-01.gif') center center no-repeat;
+   border: 1px solid #b4b4b4;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px #333;
+   height: 32px;
+   opacity: .5;
+   padding: 10px;
+   position: fixed;
+   width: 32px;
+   z-index: 10100;
+}
+
+.rb-lightbox-wrapper .arrow
+{
+   cursor: pointer;
+   height: 100px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   width: 82px;
+   z-index: 10003;
+}
+
+.rb-lightbox-wrapper .arrow.left
+{
+   left: 9px;
+}
+
+.rb-lightbox-wrapper .arrow.right
+{
+   right: 9px;
+}
+
+.rb-lightbox-wrapper .arrow:hover
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.rb-lightbox-wrapper .arrow.disabled 
+{
+   display: none;
+}
+
+.rb-lightbox-wrapper .arrow-t, 
+.rb-lightbox-wrapper .arrow-b
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   left: 26px;
+   position: relative;
+   width: 30px;
+}
+
+.rb-lightbox-wrapper .arrow-t
+{
+   top: 38px;
+}
+
+.rb-lightbox-wrapper .arrow-b
+{
+   top: 50px;
+}
+
+.rb-lightbox-wrapper .close
+{
+   cursor: pointer;
+   height: 22px;
+   opacity: .5;
+   filter: alpha(opacity=50);
+   position: fixed;
+   right: 39px;
+   top: 30px;
+   width: 22px;
+   z-index: 10003;
+}
+
+.rb-lightbox-wrapper .close:hover 
+{
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.rb-lightbox-wrapper .close .cw, 
+.rb-lightbox-wrapper .close .ccw
+{
+   background-color: #fff;
+   border-radius: 3px;
+   height: 6px;
+   position: absolute;
+   left: -4px;
+   top: 8px;
+   width: 30px;
+}
+
+.rb-lightbox-wrapper .cw
+{
+   transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(45deg);
+   /* Opera */
+    -moz-transform: rotate(45deg);
+/* Firefox */}
+
+.rb-lightbox-wrapper .ccw
+{
+   transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   /* IE 9 */
+    -webkit-transform: rotate(-45deg);
+   /* Safari and Chrome */
+    -o-transform: rotate(-45deg);
+   /* Opera */
+    -moz-transform: rotate(-45deg);
+/* Firefox */}
+
+.rb-lightbox-wrapper .close-alt, 
+.rb-lightbox-wrapper .arrow-right-alt, 
+.rb-lightbox-wrapper .arrow-left-alt 
+{
+   color: #fff;
+   display: none;
+   font-size: 2.5em;
+   line-height: 100%;
+}
+
+.ie8 .rb-lightbox-wrapper .close-alt, 
+.ie8 .rb-lightbox-wrapper .arrow-right-alt, 
+.ie8 .rb-lightbox-wrapper .arrow-left-alt 
+{
+   display: block;
+}
+
+.ie8 .rb-lightbox-wrapper .cw, 
+.ie8 .rb-lightbox-wrapper .ccw 
+{
+   display: none;
+}
+
+.rb-content-layout .rb-content
+{
+   margin:0 auto;
+}
+
+/* Begin Additional CSS Styles */
+
+/* End Additional CSS Styles */

@@ -1,0 +1,84 @@
+/* Created by Artisteer v4.1.0.59861 */
+
+.rb-header, #rb-header-bg, .rb-layout-cell, .rb-layout-wrapper, .rb-footer, .rb-nav, #rb-hmenu-bg, .rb-sheet,
+.clearfix {
+   zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).className="cleared");
+}
+
+.rb-textblock > div {
+   display: block;
+   line-height: normal;
+   zoom: 1;
+}
+
+.rb-header
+{
+   z-index: 1;
+   background-image: [headerimage];
+   background-position: [headerposition];
+}
+
+#rb-header-bg 
+{
+   display: none;
+}
+
+.rb-content-layout, .rb-content-layout-row, .rb-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.rb-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+
+input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+* html input[type="text"]
+{
+   margin :0;
+}
+
+form.rb-search>input[type="text"]
+{
+   margin:0 0 0 -3px;
+   zoom:expression(runtimeStyle.zoom = 1, parentNode.insertBefore(document.createElement('div'), this).appendChild(this));
+}
+
+form.rb-search div>input[type="text"]
+{
+   width: 100%;
+}
+
+* html form.rb-search>input[type="text"] 
+{
+   margin :0;
+}
+
+.rb-postheadericons span{
+   zoom: 1;
+}
+.rb-postcontent {
+   height: 1%;
+}
+
+.close-alt, .arrow-right-alt, .arrow-left-alt {
+   display: block !important;
+}
+.cw, .ccw {
+   display: none !important;
+}
+
+.rb-content 
+{
+   width: auto;
+   float:none;
+}
+
